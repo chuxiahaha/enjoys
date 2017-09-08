@@ -1,0 +1,120 @@
+@import "util.scss";
+#cartContent{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow: auto;
+     &::-webkit-scrollbar{
+               display:none;
+           }
+    .MyCartPro{
+    width:90%;
+    margin:20px 5%;
+    li{
+        width:100%;
+        height:160px;
+        @include flexBox;
+        @include flex-direction('row');
+        .cartCheck{
+            width:30px;
+            height:115px;
+            @include flex-center;
+        }
+        .cartLeft{
+            width:175px;
+            height:115px;
+            margin-right:10px;
+            img{
+                width:100%;
+                height:100%;
+                //margin:auto;
+            }
+        }
+        .cartRight{
+            @include flex(1);
+            .cartproPric{
+                color:#f66;
+                margin-right:20px;
+            }
+            .originP{
+                text-decoration: line-through;
+            }
+            .ProNum{
+                margin-top:10px;
+                .numJian{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    //@include flex-center;
+                    text-align:center;
+                    line-height:20px;
+                    background:#eee;
+                    margin-right:10px;
+                    
+                }
+                .numSub{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    text-align:center;
+                    line-height:20px;
+                    background:#eee;
+                    margin-left:10px;
+                    margin-right:10px;
+                }
+                
+            }
+        }
+    }
+}
+.emptyCart{
+    width:100%;
+    height:100%;
+    .emptyImg{
+        width:90%;
+        height:100%;
+        margin:20px 5%;
+        text-align: center;
+        img{
+            width:300px;
+            height:290px;
+        }
+        p{
+            width:100%;
+            height:30px;
+            
+            
+        }
+    }
+}
+.cartfooter{
+    width:100%;
+    height:50px;
+    position:fixed;
+    bottom:0;
+    @include flexBox;
+    @include flex-direction('row');
+    .checkCart{
+        width:100px;
+        @include flex-center;
+        input{
+            display:inline-block;
+        }
+    }
+    .subPrice{
+        width:180px;
+        text-align: left;
+        line-height: 50px;
+        span{
+            color:red;
+        }
+    }
+    .toOrder{
+        width:300px;
+        @include flex-center;
+        background:#f66;
+        color:#fff;
+    }
+}
+}
+

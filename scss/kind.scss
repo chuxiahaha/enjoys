@@ -1,0 +1,125 @@
+@import "util.scss";
+.header{
+    width:100%;
+    height:44px;
+    @include flexBox;
+    @include flex-direction('row');
+    .kindHeader{
+        @include flex(1);
+        @include flex-center;
+    }
+    .kindLogo{
+        @include flex(1);
+        @include flex-center;
+        
+        p{
+            display:inline-block;
+            img{
+                width:70px;
+                height:30px;
+                display:inline-block
+            }
+            .address{
+                font-size:12px;
+            }
+        }
+    }
+    .kindSearch{
+        @include flex(1);
+        @include flex-center;
+        position:relative;
+        p span{
+            display:inline-block;
+            width:40px;
+            text-align:center;
+            
+        }
+        p .star{
+            margin-left:10px;
+        }
+        .searchShow{
+            width:360px;
+            position:absolute;
+            height:30px;
+            background:#fff;
+            left:-240px;
+            padding:10px;
+            bottom:-50px;
+            font-size:16px;
+            input{
+                font-size:14px;
+                height:30px;
+                background:#eee;
+                border:none;
+                width:280px;
+                margin-right:20px;
+                outline: none;
+                text-indent: 10px;
+            }
+           
+        }
+        .kindDiv{
+            width:100px;
+            position:absolute;
+            bottom:-100px;
+            background:#fff;
+            li{
+                width:100px;
+                height:30px;
+                border-bottom:1px solid #eee;
+                color:#999;
+                font-size:16px;
+                text-align:center;
+                line-height:30px;
+                text-shadow: none;
+                
+                
+            }
+        }
+    }
+}
+.content{
+    width:100%;
+    .groupSection{
+        margin:20px 5%;
+        width:90%;
+        height:auto;
+    
+        .descTitle{
+            width:100%;
+            margin:10px 0;
+            h1{
+                font-size:22px;
+            }
+            p{
+                font-size:14px;
+                color:#f66;
+            }
+        }
+        .tabs{
+            width:100%;
+            li{
+                padding-bottom:20px;
+                border-bottom:1px solid #ddd;
+                width:100%;
+                margin-bottom:20px;
+                img{
+                    width:100%;
+                    height:224px;
+                    margin:auto;
+                    margin-bottom:5px;
+                }
+                .tabsTitle{
+                    width:100%;
+                    color:#666;
+                    
+                }
+                .tabDecs{
+                    width:100%;
+                    color:#999;
+                    font-size:12px;
+                }
+            }
+        }
+   }
+}

@@ -1,0 +1,100 @@
+@import "util.scss";
+#addressContent{
+        width:100%;
+        height:100%;
+        position:relative;
+        .imgAddr{
+            width:100%;
+            height:200px;
+            text-align: center;
+            margin-top:200px;
+            //line-height: 200px;
+            img{
+                width:150px;
+                height:140px;
+            }
+        }
+        .addressMsg{
+            width:90%;
+            margin:10px 5%;
+            input {
+                width:100%;
+                height:30px;
+                line-height:30px;
+                border:none;
+                outline: none;
+                border-bottom:1px solid #ddd;
+                line-height: 30px;
+                margin:10px 0;
+            }
+            .checkAddr{
+                display:inline-block;
+                width:15px;
+                height:15px;
+            }
+            p {
+                width:100%;
+                height:30px;
+                margin-top:20px;
+                @include flexBox;
+                @include flex-direction('row');
+                .saveBtn{
+                    display:inline-block;
+                    height:40px;
+                    text-align:center;
+                    line-height:40px;
+                    background:#f66;
+                    color:#fff;
+                    border-radius:5px;
+                    @include flex(1)
+                }
+                .backBtn{
+                    display:inline-block;
+                    @include flex(1)
+                    margin-left:10px;
+                    height:40px;
+                    line-height: 40px;
+                    text-align:center;
+                    background:#ddd;
+                    border-radius:5px;
+                }
+            }
+        }
+        .addressCon{
+            width:90%;
+            margin:20px 5%;
+            li{
+                width:100%;
+                margin:20px 0;
+                border-bottom:1px solid #ddd;
+                .namePhone{
+                    width:100%;
+                    height:30px;
+                    .name{
+                        display:inline-block;
+                        float:left;
+                    }
+                    .phone{
+                        display:inline-block;
+                        float:right;
+                    }
+                }
+                .adrdet{
+                    width:100%;
+                    
+                }
+            }
+        }
+        .addrFooter{
+            width:100%;
+            height:40px;
+            border-top:1px solid #ddd;
+            position:fixed;
+            bottom:0;
+            text-align:center;
+            line-height:40px;
+            p{
+                color:#f66;
+            }
+        }
+    }

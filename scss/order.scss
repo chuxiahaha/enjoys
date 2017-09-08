@@ -1,0 +1,96 @@
+@import "util.scss";
+#orederContent{
+    position:relative;
+    width:100%;
+    height:100%;
+    .MyCartPro{
+    width:90%;
+    margin:20px 5%;
+    li{
+        width:100%;
+        height:130px;
+        @include flexBox;
+        @include flex-direction('row');
+        .cartCheck{
+            width:30px;
+            height:115px;
+            @include flex-center;
+        }
+        .cartLeft{
+            width:175px;
+            height:115px;
+            margin-right:10px;
+            img{
+                width:100%;
+                height:100%;
+                //margin:auto;
+            }
+        }
+        .cartRight{
+            @include flex(1);
+            .cartproPric{
+                color:#f66;
+                margin-right:20px;
+            }
+            .originP{
+                text-decoration: line-through;
+            }
+            .ProNum{
+                margin-top:10px;
+                .numJian{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    //@include flex-center;
+                    text-align:center;
+                    line-height:20px;
+                    background:#eee;
+                    margin-right:10px;
+                    
+                }
+                .numSub{
+                    display:inline-block;
+                    width:20px;
+                    height:20px;
+                    text-align:center;
+                    line-height:20px;
+                    background:#eee;
+                    margin-left:10px;
+                    margin-right:10px;
+                }
+                
+            }
+        }
+    }
+}
+.cartfooter{
+    width:100%;
+    height:50px;
+    position:fixed;
+    bottom:0;
+    @include flexBox;
+    @include flex-direction('row');
+    .checkCart{
+        @include flex(1);
+        @include flex-center;
+        input{
+            display:inline-block;
+        }
+    }
+    .subPrice{
+        @include flex(1);
+        text-align: left;
+        line-height: 50px;
+        span{
+            color:red;
+        }
+    }
+    .toOrder{
+        @include flex(1);
+        @include flex-center;
+        background:#f66;
+        color:#fff;
+    }
+}
+}
+

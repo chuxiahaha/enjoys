@@ -1,0 +1,70 @@
+@import "util.scss";
+.type{
+     width:100%;
+     height:100%;
+     @include flexBox;
+     @include flex-direction('column');
+    .myCouPon{
+        width:90%;
+        margin:10px 5%;
+        height:40px;
+        
+        p{
+            height:40px;
+            width:100%;
+            border-top:1px solid #ddd;
+            line-height:40px;
+            .CouLeft{
+                float:left;
+            }
+            .CouRight{float:right;
+                
+            }
+        }
+    } 
+    .inputCode{
+        width:90%;
+        @include flex(1);
+        padding:20px 5%;
+        background:#f9f9f9;
+        input{
+            height:30px;
+            
+        }
+        .inputContent{
+            width:75%;
+            margin-right:10px;
+            outline: none;
+            //box-sizing: border-box;
+        }
+        .couBtn{
+            width:20%;
+            background:#ff3939;
+            border:none;
+            color:#fff;
+            
+        }
+        p{
+            height: 50px;
+            line-height:50px;
+            font-size:14px;
+            color:#666;
+            .useAble{
+                float:left;
+                b{
+                    font-style: normal;
+                    color:#f66;
+                }
+            }
+            .useSay{
+                float:right;
+            }
+        }
+        .couText{
+            width:100%;
+            height:50px;
+            text-align:center;
+            line-height:50px;
+        }
+    }   
+}

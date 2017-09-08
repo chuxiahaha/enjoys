@@ -1,0 +1,102 @@
+@import "util.scss";
+.header{
+    width:100%;
+    height:44px;
+    @include flexBox;
+    @include flex-direction('row');
+    .kindHeader{
+        @include flex(1);
+        @include flex-center;
+    }
+    .kindLogo{
+        @include flex(1);
+        @include flex-center;
+        
+        p{
+            display:inline-block;
+            img{
+                width:70px;
+                height:30px;
+                display:inline-block
+            }
+            .address{
+                font-size:12px;
+            }
+        }
+    }
+    .kindSearch{
+        @include flex(1);
+        @include flex-center;
+        p span{
+            display:inline-block;
+            width:40px;
+            text-align:center;
+            
+        }
+        p .star{
+            margin-left:10px;
+        }
+        .searchShow{
+            width:360px;
+            position:absolute;
+            height:30px;
+            background:#fff;
+            left:-240px;
+            padding:10px;
+            bottom:-50px;
+            font-size:16px;
+            input{
+                font-size:14px;
+                height:30px;
+                background:#eee;
+                border:none;
+                width:280px;
+                margin-right:20px;
+                outline: none;
+                text-indent: 10px;
+            }
+           
+        }
+        .kindDiv{
+            width:100px;
+            position:absolute;
+            bottom:-100px;
+            background:#fff;
+            li{
+                width:100px;
+                height:30px;
+                border-bottom:1px solid #eee;
+                color:#999;
+                font-size:16px;
+                text-align:center;
+                line-height:30px;
+                text-shadow: none;
+                
+                
+            }
+        }
+    }
+}
+#content{
+        width:100%;
+        .cityContent{
+            width:90%;
+            margin:20px 5%;
+            p{
+                height:30px;
+            }
+            .cityName{
+                width:100%;
+                li{
+                    width:30%;
+                    height:30px;
+                    text-align:center;
+                    line-height: 30px;
+                    border:1px solid #000;
+                    box-sizing: border-box;
+                    margin:5px;
+                    float:left;
+                }
+            }
+        }
+    }
